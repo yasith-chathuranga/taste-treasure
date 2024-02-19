@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TasteTreasure</title>
+    <link rel="icon" href="asests/TasteTreasure.png">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        .navbar{
+            width: 85%;
+            margin: auto;
+            padding: 35px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo{
+            width: 120px;
+            cursor: pointer;
+        }
+        .navbar ul li{
+            list-style: none;
+            display: inline-block;
+            margin: 0 40px;
+            position: relative;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            color: black;
+            text-transform: uppercase;
+        }
+        .navbar ul li::after{
+            content: '';
+            height: 3px;
+            width: 0%;
+            background-color: darkgoldenrod;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            transition: 0.5s;
+        }
+        .navbar ul li:hover:after{
+            width: 100%;
+        }
+        .content{
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+        }
+        .content h1{
+            font-size: 65px;
+            margin-top: 05%;
+        }
+        .content p{
+            margin: 20px auto;
+            font-weight: 100%;
+            line-height: 25px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin-top: 25%;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid rgb(0, 0, 0);
+            padding: 8px;
+            text-align: center;
+            height: 300px;
+            width: 300px;
+        }
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="asests/TasteTreasure.png" alt="logo" style="width: 400px;">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Recipes</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </div>
+        <div class= "content">
+            <h1>DISCOVER DELICIOUS DELIGHTS</h1>
+            <p>Explore a world of culinary wonders with Discover Delicious Delights,<br> your go-to destination for mouthwatering recipes and gastronomic inspiration.</p>
+        </div>
+    <div class="container">
+        <table>
+            <tr>
+                <td rowspan="2"><img src="asests/Sesame Chicken with Broccoli.jpg" alt=""><br><br><br> Chicken with Broccoli</td></td>
+                <td rowspan="2"><img src="asests/Boston Cream Pie Cupcakes.jpg" alt=""><br><br><br> Boston Cream Pie Cupcakes</td>
+                <td rowspan="2"><img src="asests/Chocolate Mousse for Beginners.jpg" alt=""><br><br><br> Chocolate Mousse for Beginners</td>
+                <td rowspan="2"><img src="asests/Crispy Caesar Chicken Cutlets.jpg" alt=""><br><br><br> Crispy Caesar Chicken Cutlets</td>
+            </tr>
+            <tr>   
+            </tr>
+            <tr>
+                <td rowspan="2"><img src="asests/Best Pan Fried Cod with Tomatoes.jpg" alt=""><br><br><br> Best Pan Fried Cod with Tomatoes</td>
+                <td rowspan="2"><img src="asests/Garlic Shrimp.jpg" alt=""><br><br><br> Garlic Shrimp</td>
+                <td>Data 3</td>
+                <td>Data 4</td>
+            </tr>
+            <tr>
+                <td style="height: 100px;">7</td>
+                <td style="height: 100px;">8</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
