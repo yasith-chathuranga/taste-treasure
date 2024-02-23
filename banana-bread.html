@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TasteTreasure</title>
+    <link rel="icon" href="asests/TasteTreasure.png">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        .navbar{
+            width: 85%;
+            margin: auto;
+            padding: 35px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 1;
+        }
+        .logo{
+            width: 120px;
+            cursor: pointer;
+        }
+        .navbar ul li{
+            list-style: none;
+            display: inline-block;
+            margin: 0 40px;
+            position: relative;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            color: black;
+            text-transform: uppercase;
+        }
+        .navbar ul li::after{
+            content: '';
+            height: 3px;
+            width: 0%;
+            background-color: #AB9746;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            transition: 0.5s;
+        }
+        .navbar ul li:hover::after{
+            width: 100%;
+        }
+        .content{
+            width: 100%;
+            padding-top: 100px;
+        }
+        .content h1{
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 48px;
+            display: flex;
+            margin: 0 175px;
+            margin-top: -5%;
+        }
+        .content h2{
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 36px;
+            display: flex;
+            margin: 0 175px;
+            margin-top: -2%;
+        }
+        .content h3{
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 24px;
+            display: flex;
+            margin: 0 175px;
+            margin-top: -4%;
+        }
+        .content ul{
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 18px;
+            display: block;
+            margin: 0 193px;
+            margin-top: 2%;
+        }
+        .content p{
+            margin: 20px auto;
+            font-weight: 100%;
+            line-height: 25px;
+            margin: 0 175px;
+        }
+        .container {
+            display: flex;
+            margin: 0 175px;
+            height: 100vh;
+        }
+        table {
+            border: 10px solid #AB9746;
+            border-collapse: collapse;
+            margin: 0 175px;
+            margin-top: -12%;
+            width: 600px;
+            height: 100px;
+        }
+        td{
+            border: 1px;
+            padding: 30px;
+            text-align: left;
+        }
+        th{
+            border: 1px solid rgb(0, 0, 0);
+            padding: 30px;
+        }
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="asests/TasteTreasure.png" alt="logo" style="width: 400px;">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Recipes</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>Banana Bread Brownies</h1><br>
+            <p>These banana bread brownies are chocolate brownies that taste like banana<br>bread, and have the chewy, fudgy texture of a brownie. As an added bonus,<br>you'll learn how to brûlée a banana for an extra-special finishing touch.</p>
+        </div>
+        <div class="container">
+            <img src="/asests/Banana Bread Brownies.jpg" width="600" height="450" alt="" style="margin-top: 5%;">
+        </div>
+    </div>
+    <table>
+        <tr>
+            <td><strong>Prep Time:</strong> <br><br> 15 mins</td>
+            <td><strong>Cook Time:</strong> <br><br> 30 mins</td>
+            <td><strong>Chill Time:</strong> <br><br> 1 hr</td>
+        </tr>
+        <tr>
+            <td><strong>Total Time:</strong> <br><br> 1 hr 45 mins</td>
+            <td><strong>Servings:</strong> <br><br> 12</td>
+        </tr>
+    </table>
+    <div class="content">
+        <h2>Ingredients</h2><br>
+                <ul>
+                    <li>1 3/4 cups all-purpose flour</li><br>
+                    <li>1 teaspoon baking powder</li><br>
+                    <li>1 teaspoon baking soda</li><br>
+                    <li>1 teaspoon kosher salt</li><br>
+                    <li>2 ounces dark chocolate, broken into pieces</li><br>
+                    <li>1 cup white sugar</li><br>
+                    <li>1/2 cup unsalted butter, at room <br>temperature</li><br>
+                    <li>1 large egg</li><br>
+                    <li>2 very ripe bananas, mashed (about 1 cup)</li><br>
+                    <li>1/4 teaspoon vanilla extract</li><br>
+                    <li>1/2 cup chopped walnuts</li><br>
+                    <li>1/2 cup semisweet chocolate chips</li><br>
+                    <li>12 slices banana (optional)</li><br>
+                    <li>2 tablespoons white sugar (optional, for <br>banana brûlée)</li>
+                </ul>
+    </div>
+    <div class="content">
+        <h2>Directions</h2><br>
+        <p><strong>Step 1</strong></p>
+        <p>Preheat the oven to 350 degrees F (175 degrees C). Generously butter a 9x9-inch<br>square pan. A piece of parchment paper can also be added to the bottom of the<br>pan to prevent sticking.</p><br>
+        <p><strong>Step 2</strong></p>
+        <p>Whisk flour, baking powder, baking soda, and salt together in a bowl; set aside.</p><br>
+        <p><strong>Step 3</strong></p>
+        <p>Melt chocolate in a microwave-safe glass or ceramic bowl in 15-second intervals,<br>stirring after each interval, 1 to 3 minutes.</p><br>
+        <p><strong>Step 4</strong></p>
+        <p>Beat butter and sugar together in a large bowl with an electric mixer until light<br>and fluffy. Add egg, vanilla, and mashed banana, and beat until combined. Add<br>chocolate, and beat until mixture is well combined and smooth.</p><br>
+        <p><strong>Step 5</strong></p>
+        <p>Use a spatula to mix in walnuts and chocolate chips, then use the spatula to mix<br>in flour just until flour disappears. Transfer batter into the prepared pan and<br>smooth top. Place banana slices on top, evenly spaced in a grid pattern.</p><br>
+        <p><strong>Step 6</strong></p>
+        <p>Bake in the preheated oven until a skewer comes out almost clean but with<br>some batter on the very tip. If you want fudgier brownies, do not overcook.</p><br>
+        <p><strong>Step 7</strong></p>
+        <p>Let brownies cool in the pan. Cover, refrigerate until cold, about 1 hour, and<br>serve chilled.</p><br>
+        <p><strong>Step 8</strong></p>
+        <p>For optional banana brûlée: While brownies are cooling, cover each banana slice<br>with a half teaspoon of sugar. Use a propane kitchen torch to melt the sugar<br>until dark brown and bubbling. Be careful not to char the edges of the crust<br>around the banana too much. This banana brûlée step can also be done before<br>the brownies go into the oven.</p>
+    </div>
+    <br>
+    <footer style="background-color: #AB9746; color: white; text-align: center; padding: 20px;">
+        &copy; 2024 TasteTreasure. All rights reserved.
+    </footer>
+</body>
+</html>

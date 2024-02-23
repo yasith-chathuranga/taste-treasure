@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TasteTreasure</title>
+    <link rel="icon" href="asests/TasteTreasure.png">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        .navbar{
+            width: 85%;
+            margin: auto;
+            padding: 35px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 1;
+        }
+        .logo{
+            width: 120px;
+            cursor: pointer;
+        }
+        .navbar ul li{
+            list-style: none;
+            display: inline-block;
+            margin: 0 40px;
+            position: relative;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            color: black;
+            text-transform: uppercase;
+        }
+        .navbar ul li::after{
+            content: '';
+            height: 3px;
+            width: 0%;
+            background-color: #AB9746;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            transition: 0.5s;
+        }
+        .navbar ul li:hover::after{
+            width: 100%;
+        }
+        .content{
+            width: 100%;
+            padding-top: 100px;
+        }
+        .content h1{
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 48px;
+            display: flex;
+            margin: 0 175px;
+            margin-top: -5%;
+        }
+        .content h2{
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 36px;
+            display: flex;
+            margin: 0 175px;
+            margin-top: -2%;
+        }
+        .content h3{
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 24px;
+            display: flex;
+            margin: 0 175px;
+            margin-top: -4%;
+        }
+        .content ul{
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 18px;
+            display: block;
+            margin: 0 193px;
+            margin-top: -5%;
+        }
+        .content p{
+            margin: 20px auto;
+            font-weight: 100%;
+            line-height: 25px;
+            margin: 0 175px;
+        }
+        .container {
+            display: flex;
+            margin: 0 175px;
+            height: 100vh;
+        }
+        table {
+            border: 10px solid #AB9746;
+            border-collapse: collapse;
+            margin: 0 175px;
+            margin-top: -12%;
+            width: 600px;
+            height: 100px;
+        }
+        td{
+            border: 1px;
+            padding: 30px;
+            text-align: left;
+        }
+        th{
+            border: 1px solid rgb(0, 0, 0);
+            padding: 30px;
+        }
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="asests/TasteTreasure.png" alt="logo" style="width: 400px;">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Recipes</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>Boston Cream Pie Cupcakes</h1><br>
+            <p>These Boston cream pie cupcakes are everything you love about Boston cream<br> pie—the fluffy vanilla cake, pastry cream filling, and rich chocolate frosting—just<br> in miniature form!</p>
+        </div>
+        <div class="container">
+            <img src="/asests/Boston Cream Pie Cupcakes.jpg" width="600" height="450" alt="" style="margin-top: 5%;">
+        </div>
+    </div>
+    <table>
+        <tr>
+            <td><strong>Prep Time:</strong> <br><br> 45 mins</td>
+            <td><strong>Cook Time:</strong> <br><br> 35 mins</td>
+            <td><strong>Cool Time:</strong> <br><br> 1 hr 35 mins</td>
+        </tr>
+        <tr>
+            <td><strong>Total Time</strong> <br><br>2 hrs 55 mins</td>
+            <td><strong>Servings:</strong> <br><br> 24</td>
+            <td><strong>Yield:</strong> <br><br> 24 cupcakes</td>
+        </tr>
+    </table>
+    <div class="content">
+        <h2>Ingredients</h2><br>
+        <div class="content">
+            <h3>Pastry Cream Filling:</h3>
+            <div class="content">
+                <ul>
+                    <li>3 large egg yolks, at room temperature</li><br>
+                    <li>1/4 cup white sugar</li><br>
+                    <li>1/4 teaspoon salt</li><br>
+                    <li>1 pinch ground nutmeg</li><br>
+                    <li>2 tablespoons all-purpose flour</li><br>
+                    <li>1 cup half-and-half cream</li><br>
+                    <li>2 tablespoons unsalted butter</li><br>
+                    <li>1 1/2 teaspoons vanilla extract</li><br>
+                    <li>1/3 cup very cold heavy whipping cream</li><br>
+                </ul>
+        </div>
+            <div class="content">
+                <h3>Cupcakes:</h3>
+                <div class="content">
+                    <ul>
+                        <li>1 1/2 cups all-purpose flour</li><br>
+                        <li>1 1/2 teaspoons baking powder</li><br>
+                        <li>3/4 teaspoon salt</li><br>
+                        <li>3/4 cup half-and-half cream</li><br>
+                        <li>6 tablespoons unsalted butter</li><br>
+                        <li>2 teaspoons vanilla extract</li><br>
+                        <li>1/4 teaspoon almond extract</li><br>
+                        <li>3 large egg whites, at room temperature</li><br>
+                        <li>2 large eggs</li><br>
+                        <li>1 1/2 cups white sugar</li><br>
+                    </ul>
+        </div>
+        <div class="content">
+            <h3>Frosting:</h3>
+            <div class="content">
+                <ul>
+                    <li>10 ounces dark chocolate chips (such as<br> Ghirardelli® 60% Cacao Baking Chips)</li><br>
+                    <li>2 tablespoons light corn syrup</li><br>
+                    <li>3/4 cup heavy cream</li><br>
+                </ul>
+    </div>
+    </div>
+    <div class="content">
+        <h2>Directions</h2><br>
+        <p><strong>Step 1</strong></p>
+        <p>Prepare the pastry cream: Whisk together egg yolks, 1/4 cup sugar, 1/4 teaspoon<br> salt, and pinch of nutmeg until combined. Add in 2 tablespoons of flour and mix<br>until thoroughly incorporated.</p><br>
+        <p><strong>Step 2</strong></p>
+        <p>Place 1 cup half-and-half in a medium saucepan over medium-low heat until<br> just beginning to simmer, about 5 minutes, then remove from heat. While<br>whisking constantly, carefully and slowly pour hot half-and-half into egg yolk<br>mixture a little at a time, whisking until it is all thoroughly incorporated. Pour<br>mixture back into the saucepan and place over medium-low heat, whisking<br>constantly, until mixture has thickened, 2 to 3 minutes. Remove from heat and<br>add in 1 tablespoon butter; mix until thoroughly melted and incorporated. Add<br>in remaining 1 tablespoon butter and 1 1/2 teaspoons vanilla, and mix until<br>thoroughly combined.</p><br>
+        <p><strong>Step 3</strong></p>
+        <p>Place a fine mesh strainer over a mixing bowl. Pour pastry cream into the<br>strainer and press through using a spatula to remove any lumps. Cover with<br>plastic wrap, making sure the wrap is in contact with the surface of the pastry<br>cream. Refrigerate until completely chilled, 1 to 2 hours.</p><br>
+        <p><strong>Step 4</strong></p>
+        <p>Place 1/3 cup cold heavy whipping cream into a bowl, and whip until stiff peaks<br> form. Remove pastry cream from the refrigerator; remove plastic wrap.<br> Fold whipped cream into pastry cream until thoroughly combined. Cover and <br>keep chilled until ready to use.</p><br>
+        <p><strong>Step 5</strong></p>
+        <p>Preheat the oven to 325 degrees F (162 degrees C). Line 2 regular 12-cup <br>cupcake pans with liners.</p><br>
+        <p><strong>Step 6</strong></p>
+        <p>In a large bowl, sift together 1 1/2 cups flour, baking powder, and 3/4<br> teaspoon salt. Set aside.</p><br>
+        <p><strong>Step 7</strong></p>
+        <p>Bring 3/4 cup half-and-half, 6 tablespoons butter, 1 1/2 teaspoons vanilla,<br> and 1/4 teaspoon almond extract to a simmer in a small saucepan over<br> medium low-heat. Turn off heat; keep warm.</p><br>
+        <p><strong>Step 8</strong></p>
+        <p>Beat egg whites, whole eggs,  and 1 1/2 cups sugar until light and airy, 5<br> to 7 minutes. With mixer running on low speed, slowly pour heated<br> half-and-half mixture into the egg mixture until thoroughly combined.<br> Add in half of the dry ingredients; mix until just combined. Add in remaining dry<br> ingredients; mix until just combined, with very few lumps. Batter will be thin.</p><br>
+        <p><strong>Step 9</strong></p>
+        <p>Working somewhat quickly, divide batter evenly between the 2 prepared<br> cupcake pans, filling each cupcake liner just over half full.</p><br>
+        <p><strong>Step 10</strong></p>
+        <p>Bake cupcakes in the preheated oven until golden and a toothpick inserted<br> into the center of the cupcake comes out clean, 25 to 30 minutes.<br> Allow cupcakes to cool in pan for 5 minutes, then remove to a wire rack<br> to cool completely.</p><br>
+        <p><strong>Step 11</strong></p>
+        <p>Once cupcakes are cool, use a cupcake corer or paring knife to remove the<br> center of the cupcakes (making sure not to go all the way through<br> the sides or bottom). Save the top of the cored pieces to use as a 'cap'<br> for the filling, cutting away any extra cupcake as necessary.</p><br>
+        <p><strong>Step 12</strong></p>
+        <p>Fill a piping bag with the pastry cream. Pipe filling into each cored cupcake.<br> Place cupcake 'cap' over the top of the filling.</p><br>
+        <p><strong>Step 13</strong></p>
+        <p>To make frosting, place chocolate chips, corn syrup, and 3/4 cup heavy cream<br> into a microwave safe bowl. Microwave mixture at 50% power in 30<br> second intervals, until melted and combined, 1 1/2 to 2 minutes. Cool<br> chocolate until thickened to a spreadable consistency, 5 to 10 minutes. Frost each <br>filled cupcake with the chocolate frosting.</p><br>
+        <p><strong>Step 14</strong></p>
+        <p>Keep cupcakes stored in the refrigerator until ready to eat. Bring back to <br>room temperature before serving. The chocolate frosting will harden<br> up substantially in the fridge, and is best served at room temperature.</p>
+    </div>
+    <br>
+    <footer style="background-color: #AB9746; color: white; text-align: center; padding: 20px;">
+        &copy; 2024 TasteTreasure. All rights reserved.
+    </footer>
+</body>
+</html>

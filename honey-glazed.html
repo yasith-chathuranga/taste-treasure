@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TasteTreasure</title>
+    <link rel="icon" href="asests/TasteTreasure.png">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        .navbar{
+            width: 85%;
+            margin: auto;
+            padding: 35px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 1;
+        }
+        .logo{
+            width: 120px;
+            cursor: pointer;
+        }
+        .navbar ul li{
+            list-style: none;
+            display: inline-block;
+            margin: 0 40px;
+            position: relative;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            color: black;
+            text-transform: uppercase;
+        }
+        .navbar ul li::after{
+            content: '';
+            height: 3px;
+            width: 0%;
+            background-color: #AB9746;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            transition: 0.5s;
+        }
+        .navbar ul li:hover::after{
+            width: 100%;
+        }
+        .content{
+            width: 100%;
+            padding-top: 100px;
+        }
+        .content h1{
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 48px;
+            display: flex;
+            margin: 0 175px;
+            margin-top: -5%;
+        }
+        .content h2{
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 36px;
+            display: flex;
+            margin: 0 175px;
+            margin-top: -2%;
+        }
+        .content h3{
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 24px;
+            display: flex;
+            margin: 0 175px;
+            margin-top: -4%;
+        }
+        .content ul{
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 18px;
+            display: block;
+            margin: 0 193px;
+            margin-top: 2%;
+        }
+        .content p{
+            margin: 20px auto;
+            font-weight: 100%;
+            line-height: 25px;
+            margin: 0 175px;
+        }
+        .container {
+            display: flex;
+            margin: 0 175px;
+            height: 100vh;
+        }
+        table {
+            border: 10px solid #AB9746;
+            border-collapse: collapse;
+            margin: 0 175px;
+            margin-top: -12%;
+            width: 600px;
+            height: 100px;
+        }
+        td{
+            border: 1px;
+            padding: 30px;
+            text-align: left;
+        }
+        th{
+            border: 1px solid rgb(0, 0, 0);
+            padding: 30px;
+        }
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="asests/TasteTreasure.png" alt="logo" style="width: 400px;">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Recipes</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>Honey Glazed Chicken</h1><br>
+            <p>This honey chicken recipe was given to me by a friend. I've used this recipe for<br>years, and my family requests it often. It's a light meal that everyone will enjoy.<br>Serve with steamed rice.</p>
+        </div>
+        <div class="container">
+            <img src="/asests/Honey Glazed Chicken.jpg" width="600" height="450" alt="" style="margin-top: 5%;">
+        </div>
+    </div>
+    <table>
+        <tr>
+            <td><strong>Prep Time:</strong> <br><br> 10 mins</td>
+            <td><strong>Cook Time:</strong> <br><br> 10 mins</td>
+            <td><strong>Total Time:</strong> <br><br> 20 mins</td>
+        </tr>
+        <tr>
+            <td><strong>Servings:</strong> <br><br> 4</td>
+        </tr>
+    </table>
+    <div class="content">
+        <h2>Ingredients</h2><br>
+                <ul>
+                    <li>¼ cup honey</li><br>
+                    <li>2 tablespoons soy sauce</li><br>
+                    <li>⅛ teaspoon red pepper flakes</li><br>
+                    <li>1 ½ tablespoons olive oil</li><br>
+                    <li>2 skinless, boneless chicken breast halves,<br> cut into bite-size pieces</li>
+                </ul>
+    </div>
+    <div class="content">
+        <h2>Directions</h2><br>
+        <p><strong>Step 1</strong></p>
+        <p>Gather all ingredients.</p><br>
+        <p><strong>Step 2</strong></p>
+        <p>Whisk honey, soy sauce, and red pepper flakes in a bowl; set aside.</p><br>
+        <p><strong>Step 3</strong></p>
+        <p>Heat olive oil in a skillet over medium heat; cook and stir chicken in hot oil until<br>lightly brown, about 5 minutes.</p><br>
+        <p><strong>Step 4</strong></p>
+        <p>Pour honey mixture into the skillet; continue to cook and stir until chicken is no<br>longer pink in the center and sauce is thickened, about 5 minutes more.</p><br>
+        <p><strong>Step 5</strong></p>
+        <p>Serve hot and enjoy!</p>
+    </div>
+    <br>
+    <footer style="background-color: #AB9746; color: white; text-align: center; padding: 20px;">
+        &copy; 2024 TasteTreasure. All rights reserved.
+    </footer>
+</body>
+</html>

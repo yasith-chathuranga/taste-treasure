@@ -71,21 +71,42 @@
             height: 100vh;
             margin-top: 25%;
         }
-        table {
+        table{
+            margin: 0 auto;
             border-collapse: collapse;
+            width: 80%;
+            border: 1px solid black;
+            width: 800px;
+            height: 520px;
         }
-        th, td {
-            border: 1px solid rgb(255, 255, 255);
-            padding: 8px;
-            text-align: center;
-            height: 300px;
-            width: 300px;
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        th{
+            background-color: #AB9746;
         }
         img {
             max-width: 100%;
             max-height: 100%;
             object-fit: cover;
         }
+        .send-button {
+        background-color: #AB9746;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        width: 200px;
+    }
+
+    .send-button:hover {
+        background-color: #856f41;
+    }
     </style>
 </head>
 <body>
@@ -98,31 +119,45 @@
                 <li><a href="about-us.html">About Us</a></li>
                 <li><a href="contact-us.html">Contact Us</a></li>
             </ul>
-        </div>
-        <div class= "content">
-            <h1>DISCOVER DELICIOUS DELIGHTS</h1>
-            <p>Explore a world of culinary wonders with Discover Delicious Delights,<br> your go-to destination for mouthwatering recipes and gastronomic inspiration.</p>
-        </div>
-    <div class="container">
-        <table>
-            <tr>
-                <td rowspan="2"><a href="/sesame-chicken.html" target="_blank" style="text-decoration: none; color: black;"><img src="asests/Sesame Chicken with Broccoli.jpg" alt=""><br><br><br><h3>Sesame Chicken with Broccoli</h3></a></td></td>
-                <td rowspan="2"><a href="/boston-cream-pie.html" target="_blank" style="text-decoration: none; color: black;"><img src="asests/Boston Cream Pie Cupcakes.jpg" alt=""><br><br><br><h3>Boston Cream Pie Cupcakes</h3></a></td></td>
-                <td rowspan="2"><a href="/chocolate-mouse.html" target="_blank" style="text-decoration: none; color: black;"><img src="asests/Chocolate Mousse for Beginners.jpg" alt=""><br><br><br><h3>Chocolate Mousse for Beginners</h3></a></td></td>
-                <td rowspan="2"><a href="/crispy-caesar-chicken.html" target="_blank" style="text-decoration: none; color: black;"><img src="asests/Crispy Caesar Chicken Cutlets.jpg" alt=""><br><br><br><h3>Crispy Caesar Chicken Cutlets</h3></a></td></td>
-            </tr>
-            <tr>   
-            </tr>
-            <tr>
-                <td rowspan="2"><a href="/simple-broiled-haddock.html" target="_blank" style="text-decoration: none; color: black;"><img src="asests/Simple Broiled Haddock.jpg" alt=""><br><br><br><h3>Simple Broiled Haddock</h3></a></td></td>
-                <td rowspan="2"><a href="/garlic-shrimp.html" target="_blank" style="text-decoration: none; color: black;"><img src="asests/Garlic Shrimp.jpg" alt=""><br><br><br><br><h3>Garlic Shrimp</h3></a></td></td>
-                <td rowspan="2"><a href="/honey-glazed.html" target="_blank" style="text-decoration: none; color: black;"><img src="asests/Honey Glazed Chicken.jpg" alt=""><br><br><br><h3>Honey Glazed Chicken</h3></a></td></td>
-                <td rowspan="2"><a href="/banana-bread.html" target="_blank" style="text-decoration: none; color: black;"><img src="asests/Banana Bread Brownies.jpg" alt=""><br><br><br><h3>Banana Bread Brownies</h3></a></td></td>
-            </tr>
-            <tr>   
-            </tr>
-        </table>
-    </div>
+        </div><br>
+        <div class="table">
+            <table>
+                <tbody>
+                    <tr>
+                        <th style="height: 20px; text-align: center;" colspan="4"><h1>Contact Us</h1></th>
+                    </tr>
+                    <tr style="height: 40px;">
+                        <td>Name:</td>
+                        <td colspan="3"><input type="text" style="width: 600px;"></td>
+                    </tr>
+                    <tr style="height: 40px;">
+                        <td>Age:</td>
+                        <td colspan="3"><input type="text" style="width: 600px;"></td>
+                    </tr>
+                    <tr style="height: 40px;">
+                        <td rowspan="3">Address</td>
+                        <td>Street:</td>
+                        <td colspan="2"><input type="text" style="width: 495px;"></td>
+                    </tr>
+                    <tr style="height: 40px;">
+                        <td>City:</td>
+                        <td colspan="2"><input type="text" style="width: 495px;"></td>
+                    </tr>
+                    <tr style="height: 40px;">
+                        <td>Zip Code:</td>
+                        <td colspan="2"><input type="text" style="width: 495px;"></td>
+                    </tr>
+                    <tr style="height: 40px; text-align: left;">
+                        <th colspan="4"><strong>Type Message</strong></th>
+                    </tr>
+                    <td colspan="4"><textarea name="textArea" id="textArea" cols="130" rows="8"></textarea></td>
+                    <tr style="height: 40px;">
+                        <td colspan="4"><button type="submit" class="send-button">Send</button></td>
+                    </tr>
+                </tbody>
+                <tfoot></tfoot>
+            </table>
+        </div><br><br><br>
     <footer style="background-color: #AB9746; color: white; text-align: center; padding: 20px;">
         &copy; 2024 TasteTreasure. All rights reserved.
     </footer>
