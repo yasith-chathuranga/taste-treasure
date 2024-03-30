@@ -5,116 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TasteTreasure</title>
+    <link rel="stylesheet" href="/css/boston-cream-style.css">
     <link rel="icon" href="asests/TasteTreasure.png">
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            font-family: sans-serif;
-        }
-        .navbar{
-            width: 85%;
-            margin: auto;
-            padding: 35px 0;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            z-index: 1;
-        }
-        .logo{
-            width: 120px;
-            cursor: pointer;
-        }
-        .navbar ul li{
-            list-style: none;
-            display: inline-block;
-            margin: 0 40px;
-            position: relative;
-        }
-        .navbar ul li a{
-            text-decoration: none;
-            color: black;
-            text-transform: uppercase;
-        }
-        .navbar ul li::after{
-            content: '';
-            height: 3px;
-            width: 0%;
-            background-color: #AB9746;
-            position: absolute;
-            left: 0;
-            bottom: -10px;
-            transition: 0.5s;
-        }
-        .navbar ul li:hover::after{
-            width: 100%;
-        }
-        .content{
-            width: 100%;
-            padding-top: 100px;
-        }
-        .content h1{
-            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-size: 48px;
-            display: flex;
-            margin: 0 175px;
-            margin-top: -5%;
-        }
-        .content h2{
-            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-size: 36px;
-            display: flex;
-            margin: 0 175px;
-            margin-top: -2%;
-        }
-        .content h3{
-            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-size: 24px;
-            display: flex;
-            margin: 0 175px;
-            margin-top: -4%;
-        }
-        .content ul{
-            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-size: 18px;
-            display: block;
-            margin: 0 193px;
-            margin-top: -5%;
-        }
-        .content p{
-            margin: 20px auto;
-            font-weight: 100%;
-            line-height: 25px;
-            margin: 0 175px;
-        }
-        .container {
-            display: flex;
-            margin: 0 175px;
-            height: 100vh;
-        }
-        table {
-            border: 10px solid #AB9746;
-            border-collapse: collapse;
-            margin: 0 175px;
-            margin-top: -12%;
-            width: 600px;
-            height: 100px;
-        }
-        td{
-            border: 1px;
-            padding: 30px;
-            text-align: left;
-        }
-        th{
-            border: 1px solid rgb(0, 0, 0);
-            padding: 30px;
-        }
-        img {
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: cover;
-        }
-    </style>
 </head>
 <body>
     <div class="banner">
@@ -122,7 +14,7 @@
             <img src="asests/TasteTreasure.png" alt="logo" style="width: 400px;">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">Recipes</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
                 <li><a href="about-us.html">About Us</a></li>
                 <li><a href="contact-us.html">Contact Us</a></li>
             </ul>
@@ -132,21 +24,29 @@
             <p>These Boston cream pie cupcakes are everything you love about Boston cream<br> pie—the fluffy vanilla cake, pastry cream filling, and rich chocolate frosting—just<br> in miniature form!</p>
         </div>
         <div class="container">
-            <img src="/asests/Boston Cream Pie Cupcakes.jpg" width="600" height="450" alt="" style="margin-top: 5%;">
+            <img src="/asests/Boston Cream Pie Cupcakes.jpg" alt="" >
         </div>
     </div>
-    <table>
-        <tr>
-            <td><strong>Prep Time:</strong> <br><br> 45 mins</td>
-            <td><strong>Cook Time:</strong> <br><br> 35 mins</td>
-            <td><strong>Cool Time:</strong> <br><br> 1 hr 35 mins</td>
-        </tr>
-        <tr>
-            <td><strong>Total Time</strong> <br><br>2 hrs 55 mins</td>
-            <td><strong>Servings:</strong> <br><br> 24</td>
-            <td><strong>Yield:</strong> <br><br> 24 cupcakes</td>
-        </tr>
-    </table>
+    <div class="time-servings">
+        <div class="time-box">
+            <strong>Prep Time:</strong> <br><br> 45 mins
+        </div>
+        <div class="time-box">
+            <strong>Cook Time:</strong> <br><br> 35 mins
+        </div>
+        <div class="time-box">
+            <strong>Cool Time:</strong> <br><br> 1 hr 35 mins
+        </div>
+        <div class="time-box">
+            <strong>Total Time:</strong> <br><br> 2 hrs 55 mins
+        </div>
+        <div class="servings-box">
+            <strong>Servings:</strong> <br><br> 24
+        </div>
+        <div class="servings-box">
+            <strong>Yield:</strong> <br><br> 24 cupcakes
+        </div>
+    </div>    
     <div class="content">
         <h2>Ingredients</h2><br>
         <div class="content">
@@ -184,7 +84,7 @@
             <h3>Frosting:</h3>
             <div class="content">
                 <ul>
-                    <li>10 ounces dark chocolate chips (such as<br> Ghirardelli® 60% Cacao Baking Chips)</li><br>
+                    <li>10 ounces dark chocolate chips (such as Ghirardelli® 60% Cacao Baking Chips)</li><br>
                     <li>2 tablespoons light corn syrup</li><br>
                     <li>3/4 cup heavy cream</li><br>
                 </ul>
@@ -222,7 +122,7 @@
         <p>Keep cupcakes stored in the refrigerator until ready to eat. Bring back to <br>room temperature before serving. The chocolate frosting will harden<br> up substantially in the fridge, and is best served at room temperature.</p>
     </div>
     <br>
-    <footer style="background-color: #AB9746; color: white; text-align: center; padding: 20px;">
+    <footer class="footer">
         &copy; 2024 TasteTreasure. All rights reserved.
     </footer>
 </body>

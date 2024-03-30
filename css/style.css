@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body {
+  overflow-x: hidden;
+}
+.banner img {
+  width: 400px;
+}
+.navbar {
+  margin: auto;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  width: 120px;
+  cursor: pointer;
+}
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 40px;
+  position: relative;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+.navbar ul li::after {
+  content: "";
+  height: 3px;
+  width: 0%;
+  background-color: #ab9746;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+.navbar ul li:hover:after {
+  width: 100%;
+}
+.content {
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+.content h1 {
+  font-size: 65px;
+  position: relative;
+  animation: pulse 2s infinite alternate;
+}
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+.content p {
+  margin: 20px auto;
+  font-weight: 100%;
+  line-height: 25px;
+  opacity: 0;
+  animation: fadeInParagraph 1s ease-in-out forwards;
+}
+@keyframes fadeInParagraph {
+  from {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 21%;
+}
+.container h2 {
+  font-weight: normal;
+  margin-bottom: 50px;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.card {
+  border: none;
+  background-color: #ab9746;
+  border-radius: 20px;
+  width: 250px;
+  height: 250px;
+  margin-left: 80px;
+  margin-left: 80px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s; /* Smooth transition for background color change */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card:hover {
+  background-color: #a78b27; /* New background color when hovering over the card */
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.card img {
+  object-fit: cover;
+  width: 200px;
+  height: 150px;
+  display: block;
+  margin: auto;
+  border-radius: 20px;
+}
+.card h3 {
+  padding-top: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-weight: normal;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  text-align: center; /* Center-aligns the text */
+}
+.card a {
+  text-decoration: none;
+  color: black;
+}
+.footer {
+  background-color: #ab9746;
+  width: 100%;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* About Us Page CSS */
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 80%;
+  margin-bottom: 15px;
+}
+th,
+td {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 8px;
+  text-align: justify;
+  height: 555px;
+  width: 800px;
+}
+.table img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+/* Contact Us Page CSS */
+.contact-container {
+  max-width: 800px;
+  margin: 100px auto;
+  margin-top: 28px;
+  padding: 20px;
+  background-color: whitesmoke;
+  border-radius: 40px;
+  text-align: center;
+  position: relative;
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 97%;
+  padding: 10px;
+  border: 1px solid #a9a3a3;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #4caf50;
+}
+
+button {
+  width: 200px;
+  background-color: #257928;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #329a37;
+}
+
+.contact-container {
+  /* Colorful Outline Animation */
+  animation: outline 2s infinite alternate;
+}
+
+@keyframes outline {
+  0% {
+    outline: 2px solid #ff0000;
+  }
+  25% {
+    outline: 2px solid #ffaa00;
+  }
+  50% {
+    outline: 2px solid #00ff00;
+  }
+  75% {
+    outline: 2px solid #00aaff;
+  }
+  100% {
+    outline: 2px solid #ff00ff;
+  }
+}

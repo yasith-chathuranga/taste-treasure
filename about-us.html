@@ -6,98 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TasteTreasure</title>
     <link rel="icon" href="asests/TasteTreasure.png">
-    <link rel="stylesheet" href="Style.css">
-    <style>
-               *{
-            margin: 0;
-            padding: 0;
-            font-family: sans-serif;
-        }
-        .navbar{
-            width: 85%;
-            margin: auto;
-            padding: 35px 0;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .logo{
-            width: 120px;
-            cursor: pointer;
-        }
-        .navbar ul li{
-            list-style: none;
-            display: inline-block;
-            margin: 0 40px;
-            position: relative;
-        }
-        .navbar ul li a{
-            text-decoration: none;
-            color: black;
-            text-transform: uppercase;
-        }
-        .navbar ul li::after{
-            content: '';
-            height: 3px;
-            width: 0%;
-            background-color: #AB9746;
-            position: absolute;
-            left: 0;
-            bottom: -10px;
-            transition: 0.5s;
-        }
-        .navbar ul li:hover:after{
-            width: 100%;
-        }
-        .content{
-            width: 100%;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            text-align: center;
-        }
-        .content h1{
-            font-size: 65px;
-            margin-top: 05%;
-        }
-        .content p{
-            margin: 20px auto;
-            font-weight: 100%;
-            line-height: 25px;
-        }
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin-top: 25%;
-        }
-        table {
-            margin: 0 auto;
-            border-collapse: collapse;
-            width: 80%;
-        }
-        th, td {
-            border: 1px solid rgb(255, 255, 255);
-            padding: 8px;
-            text-align:justify;
-            height: 555px;
-            width: 800px;
-        }
-        img {
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: cover;
-        }
-    </style>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <div class="banner">
         <div class="navbar">
-            <img src="asests/TasteTreasure.png" alt="logo" style="width: 400px;">
+            <img src="asests/TasteTreasure.png" alt="logo">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">Recipes</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
                 <li><a href="about-us.html">About Us</a></li>
                 <li><a href="contact-us.html">Contact Us</a></li>
             </ul>
@@ -106,7 +23,7 @@
             <table>
                 <tr>
                     <td><img src="asests/cheff.png" alt=""></td>
-                    <td style="width: 500px;">
+                    <td>
                         <h1>About Us</h1><br>
                         <p>Home cooks are our heroes—it's as simple as that. Allrecipes is a community built by and for kitchen experts: The cooks who will dedicate the weekend to a perfect beef bourguignon but love the simplicity of a slow-cooker rendition, too. The bakers who labor over a showstopping 9-layer cake but will just as happily doctor boxed brownies for a decadent weeknight dessert. The entertainers who just want a solid snack spread, without tons of dirty dishes at the end of the night.
                         </p><br>
@@ -115,7 +32,7 @@
                 </tr>
             </table>
         </div><br>
-    <footer style="background-color: #AB9746; color: white; text-align: center; padding: 20px;">
+    <footer class="footer">
         &copy; 2024 TasteTreasure. All rights reserved.
     </footer>
 </body>

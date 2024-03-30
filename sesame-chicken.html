@@ -1,190 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TasteTreasure</title>
-    <link rel="icon" href="asests/TasteTreasure.png">
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            font-family: sans-serif;
-        }
-        .navbar{
-            width: 85%;
-            margin: auto;
-            padding: 35px 0;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            z-index: 1;
-        }
-        .logo{
-            width: 120px;
-            cursor: pointer;
-        }
-        .navbar ul li{
-            list-style: none;
-            display: inline-block;
-            margin: 0 40px;
-            position: relative;
-        }
-        .navbar ul li a{
-            text-decoration: none;
-            color: black;
-            text-transform: uppercase;
-        }
-        .navbar ul li::after{
-            content: '';
-            height: 3px;
-            width: 0%;
-            background-color: #AB9746;
-            position: absolute;
-            left: 0;
-            bottom: -10px;
-            transition: 0.5s;
-        }
-        .navbar ul li:hover::after{
-            width: 100%;
-        }
-        .content{
-            width: 100%;
-            padding-top: 100px;
-        }
-        .content h1{
-            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-size: 48px;
-            display: flex;
-            margin: 0 175px;
-            margin-top: -5%;
-        }
-        .content h2{
-            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-size: 36px;
-            display: flex;
-            margin: 0 175px;
-            margin-top: -2%;
-        }
-        .content ul{
-            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-size: 18px;
-            display: block;
-            margin: 0 193px;
-            margin-top: -5%;
-        }
-        .content p{
-            margin: 20px auto;
-            font-weight: 100%;
-            line-height: 25px;
-            margin: 0 175px;
-        }
-        .container {
-            display: flex;
-            margin: 0 175px;
-            height: 100vh;
-        }
-        table {
-            border: 10px solid #AB9746;
-            border-collapse: collapse;
-            margin: 0 175px;
-            margin-top: -12%;
-            width: 600px;
-            height: 100px;
-        }
-        td{
-            border: 1px;
-            padding: 30px;
-            text-align: left;
-        }
-        th{
-            border: 1px solid rgb(0, 0, 0);
-            padding: 30px;
-        }
-        img {
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: cover;
-        }
-    </style>
-</head>
-<body>
+    <link rel="stylesheet" href="/css/sesame-chicken-style.css" />
+    <link rel="icon" href="asests/TasteTreasure.png" />
+  </head>
+  <body>
     <div class="banner">
-        <div class="navbar">
-            <img src="asests/TasteTreasure.png" alt="logo" style="width: 400px;">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Recipes</a></li>
-                <li><a href="about-us.html">About Us</a></li>
-                <li><a href="contact-us.html">Contact Us</a></li>
-            </ul>
-        </div>
-        <div class="content">
-            <h1>Sesame Chicken with Broccoli</h1><br>
-            <p>This stir-fried sesame chicken with broccoli has the classic, sweet, slightly spicy<br> flavor you expect, but is also loaded with fresh broccoli florets. Serve with white<br> or brown rice, or your favorite Asian noodles.</p>
-        </div>
-        <div class="container">
-            <img src="/asests/Sesame Chicken with Broccoli.jpg" width="600" height="450" alt="" style="margin-top: 5%;">
-        </div>
-    </div>
-    <table>
-        <tr>
-            <td><strong>Prep Time:</strong> <br><br> 25 mins</td>
-            <td><strong>Cook Time:</strong> <br><br> 20 mins</td>
-            <td><strong>Total Time:</strong> <br><br> 45 mins</td>
-        </tr>
-        <tr>
-            <td><strong>Servings:</strong> <br><br> 4</td>
-        </tr>
-    </table>
-    <div class="content">
-        <h2>Ingredients</h2><br>
-    </div>
-    <div class="content">
+      <div class="navbar">
+        <img src="asests/TasteTreasure.png" alt="logo" />
         <ul>
-            <li>1 1/2 pounds boneless skinless chicken breast, cut into 1-inch pieces</li><br>
-            <li>2 teaspoons cornstarch</li><br>
-            <li>1 teaspoon salt, or to taste</li><br>
-            <li>1/4 teaspoon white pepper, or to taste</li><br>
-            <li>2 teaspoons minced fresh garlic</li><br>
-            <li>2 teaspoons minced fresh ginger</li><br>
-            <li>1/4 cup plus 1 teaspoon cooking oil of choice, divided</li><br>
-            <li>1/3 cup soy sauce</li><br>
-            <li>1/3 cup hoisin sauce</li><br>
-            <li>1/3 cup rice vinegar</li><br>
-            <li>1 teaspoon sambal oelek, or to taste</li><br>
-            <li>2 tablespoons sesame oil</li><br>
-            <li>1/2 cup carrots, cut into matchsticks</li><br>
-            <li>1/2 cup sliced shallots</li><br>
-            <li>4 cups fresh broccoli florets</li><br>
-            <li>1 tablespoon cornstarch</li><br>
-            <li>1 tablespoon soy sauce</li><br>
-            <li>1 tablespoon sesame seeds, or to taste</li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
         </ul>
+      </div>
+      <div class="content">
+        <h1>Sesame Chicken with Broccoli</h1>
+        <br />
+        <p>
+          This stir-fried sesame chicken with broccoli has the classic, sweet,
+          slightly spicy<br />
+          flavor you expect, but is also loaded with fresh broccoli florets.
+          Serve with white<br />
+          or brown rice, or your favorite Asian noodles.
+        </p>
+      </div>
+      <div class="container">
+        <img src="/asests/Sesame Chicken with Broccoli.jpg" alt="" />
+      </div>
+    </div>
+    <div class="time-servings">
+      <div class="time-box">
+          <strong>Prep Time:</strong> <br /><br /> 25 mins
+      </div>
+      <div class="time-box">
+          <strong>Cook Time:</strong> <br /><br /> 20 mins
+      </div>
+      <div class="time-box">
+          <strong>Total Time:</strong> <br /><br /> 45 mins
+      </div>
+      <div class="servings-box">
+          <strong>Servings:</strong> <br /><br /> 4
+      </div>
+  </div>  
+    <div class="content">
+      <h2>Ingredients</h2>
+      <br />
     </div>
     <div class="content">
-        <h2>Directions</h2><br>
-        <p><strong>Step 1</strong></p>
-        <p>Place chicken pieces in a bowl. Sprinkle with cornstarch, salt, and white pepper.<br> Toss chicken to coat evenly and set aside.</p><br>
-        <p><strong>Step 2</strong></p>
-        <p>Heat 1 teaspoon cooking oil in a small nonstick skillet over medium heat. Add<br> garlic and ginger and cook, stirring, until fragrant, about 1 minute.</p><br>
-        <p><strong>Step 3</strong></p>
-        <p>Stir in soy sauce, hoisin sauce, rice vinegar, sambal oelek, and sesame oil. Bring<br> to a boil and cook, stirring, about 1 minute. Remove from heat and set aside.</p><br>
-        <p><strong>Step 4</strong></p>
-        <p>Heat 2 tablespoons oil over medium-high heat in a large nonstick skillet or wok<br> until very hot. Add chicken pieces carefully to the hot oil. Cook, stirring, until<br> chicken pieces are lightly browned on all sides, 8 to 10 minutes total. The chicken<br> pieces will cause spattering, so be sure to use a long-handled spoon or other<br> utensil to move the chicken around.</p><br>
-        <p><strong>Step 5</strong></p>
-        <p>Using a slotted spoon, remove chicken from the skillet and add the remaining 2<br> tablespoons cooking oil. Add carrots, shallots, and broccoli, and stir quickly and<br> continually, 3 to 4 minutes.</p><br>
-        <p><strong>Step 6</strong></p>
-        <p>Stir in prepared sauce, and cook until the vegetables are as tender as you like,<br> 2 to 3 minutes.</p><br>
-        <p><strong>Step 7</strong></p>
-        <p>Place cornstarch in a small bowl and stir in 1 tablespoon soy sauce. Keep stirring<br> until there are no lumps. Add cornstarch slurry to the skillet and rapidly stir<br> until well combined. Return chicken pieces and cook, stirring often, until heated<br> through, 2 to 3 minutes.</p><br>
-        <p><strong>Step 8</strong></p>
-        <p>Remove from heat, sprinkle with sesame seeds, and serve hot.</p>
+      <ul>
+        <li>
+          1 1/2 pounds boneless skinless chicken breast, cut into 1-inch pieces
+        </li>
+        <br />
+        <li>2 teaspoons cornstarch</li>
+        <br />
+        <li>1 teaspoon salt, or to taste</li>
+        <br />
+        <li>1/4 teaspoon white pepper, or to taste</li>
+        <br />
+        <li>2 teaspoons minced fresh garlic</li>
+        <br />
+        <li>2 teaspoons minced fresh ginger</li>
+        <br />
+        <li>1/4 cup plus 1 teaspoon cooking oil of choice, divided</li>
+        <br />
+        <li>1/3 cup soy sauce</li>
+        <br />
+        <li>1/3 cup hoisin sauce</li>
+        <br />
+        <li>1/3 cup rice vinegar</li>
+        <br />
+        <li>1 teaspoon sambal oelek, or to taste</li>
+        <br />
+        <li>2 tablespoons sesame oil</li>
+        <br />
+        <li>1/2 cup carrots, cut into matchsticks</li>
+        <br />
+        <li>1/2 cup sliced shallots</li>
+        <br />
+        <li>4 cups fresh broccoli florets</li>
+        <br />
+        <li>1 tablespoon cornstarch</li>
+        <br />
+        <li>1 tablespoon soy sauce</li>
+        <br />
+        <li>1 tablespoon sesame seeds, or to taste</li>
+      </ul>
     </div>
-    <br>
-    <footer style="background-color: #AB9746; color: white; text-align: center; padding: 20px;">
-        &copy; 2024 TasteTreasure. All rights reserved.
+    <div class="content">
+      <h2>Directions</h2>
+      <br />
+      <p><strong>Step 1</strong></p>
+      <p>
+        Place chicken pieces in a bowl. Sprinkle with cornstarch, salt, and
+        white pepper.<br />
+        Toss chicken to coat evenly and set aside.
+      </p>
+      <br />
+      <p><strong>Step 2</strong></p>
+      <p>
+        Heat 1 teaspoon cooking oil in a small nonstick skillet over medium
+        heat. Add<br />
+        garlic and ginger and cook, stirring, until fragrant, about 1 minute.
+      </p>
+      <br />
+      <p><strong>Step 3</strong></p>
+      <p>
+        Stir in soy sauce, hoisin sauce, rice vinegar, sambal oelek, and sesame
+        oil. Bring<br />
+        to a boil and cook, stirring, about 1 minute. Remove from heat and set
+        aside.
+      </p>
+      <br />
+      <p><strong>Step 4</strong></p>
+      <p>
+        Heat 2 tablespoons oil over medium-high heat in a large nonstick skillet
+        or wok<br />
+        until very hot. Add chicken pieces carefully to the hot oil. Cook,
+        stirring, until<br />
+        chicken pieces are lightly browned on all sides, 8 to 10 minutes total.
+        The chicken<br />
+        pieces will cause spattering, so be sure to use a long-handled spoon or
+        other<br />
+        utensil to move the chicken around.
+      </p>
+      <br />
+      <p><strong>Step 5</strong></p>
+      <p>
+        Using a slotted spoon, remove chicken from the skillet and add the
+        remaining 2<br />
+        tablespoons cooking oil. Add carrots, shallots, and broccoli, and stir
+        quickly and<br />
+        continually, 3 to 4 minutes.
+      </p>
+      <br />
+      <p><strong>Step 6</strong></p>
+      <p>
+        Stir in prepared sauce, and cook until the vegetables are as tender as
+        you like,<br />
+        2 to 3 minutes.
+      </p>
+      <br />
+      <p><strong>Step 7</strong></p>
+      <p>
+        Place cornstarch in a small bowl and stir in 1 tablespoon soy sauce.
+        Keep stirring<br />
+        until there are no lumps. Add cornstarch slurry to the skillet and
+        rapidly stir<br />
+        until well combined. Return chicken pieces and cook, stirring often,
+        until heated<br />
+        through, 2 to 3 minutes.
+      </p>
+      <br />
+      <p><strong>Step 8</strong></p>
+      <p>Remove from heat, sprinkle with sesame seeds, and serve hot.</p>
+    </div>
+    <br />
+    <footer class="footer">
+      &copy; 2024 TasteTreasure. All rights reserved.
     </footer>
-</body>
+  </body>
 </html>

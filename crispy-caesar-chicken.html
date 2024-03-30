@@ -5,116 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TasteTreasure</title>
+    <link rel="stylesheet" href="/css/crispy-caesar-style.css">
     <link rel="icon" href="asests/TasteTreasure.png">
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            font-family: sans-serif;
-        }
-        .navbar{
-            width: 85%;
-            margin: auto;
-            padding: 35px 0;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            z-index: 1;
-        }
-        .logo{
-            width: 120px;
-            cursor: pointer;
-        }
-        .navbar ul li{
-            list-style: none;
-            display: inline-block;
-            margin: 0 40px;
-            position: relative;
-        }
-        .navbar ul li a{
-            text-decoration: none;
-            color: black;
-            text-transform: uppercase;
-        }
-        .navbar ul li::after{
-            content: '';
-            height: 3px;
-            width: 0%;
-            background-color: #AB9746;
-            position: absolute;
-            left: 0;
-            bottom: -10px;
-            transition: 0.5s;
-        }
-        .navbar ul li:hover::after{
-            width: 100%;
-        }
-        .content{
-            width: 100%;
-            padding-top: 100px;
-        }
-        .content h1{
-            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-size: 48px;
-            display: flex;
-            margin: 0 175px;
-            margin-top: -5%;
-        }
-        .content h2{
-            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-size: 36px;
-            display: flex;
-            margin: 0 175px;
-            margin-top: -2%;
-        }
-        .content h3{
-            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-size: 24px;
-            display: flex;
-            margin: 0 175px;
-            margin-top: -4%;
-        }
-        .content ul{
-            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-size: 18px;
-            display: block;
-            margin: 0 193px;
-            margin-top: 2%;
-        }
-        .content p{
-            margin: 20px auto;
-            font-weight: 100%;
-            line-height: 25px;
-            margin: 0 175px;
-        }
-        .container {
-            display: flex;
-            margin: 0 175px;
-            height: 100vh;
-        }
-        table {
-            border: 10px solid #AB9746;
-            border-collapse: collapse;
-            margin: 0 175px;
-            margin-top: -12%;
-            width: 600px;
-            height: 100px;
-        }
-        td{
-            border: 1px;
-            padding: 30px;
-            text-align: left;
-        }
-        th{
-            border: 1px solid rgb(0, 0, 0);
-            padding: 30px;
-        }
-        img {
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: cover;
-        }
-    </style>
 </head>
 <body>
     <div class="banner">
@@ -122,7 +14,7 @@
             <img src="asests/TasteTreasure.png" alt="logo" style="width: 400px;">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">Recipes</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
                 <li><a href="about-us.html">About Us</a></li>
                 <li><a href="contact-us.html">Contact Us</a></li>
             </ul>
@@ -132,19 +24,23 @@
             <p>They are so much better than a salad, in our opinion.<br><br>This crispy chicken cutlets recipe takes flavor inspiration from the classic Caesar<br>salad. The breadcrumb mixture includes crushed croutons for added flavor and<br>crunch, plus store bought Caesar salad dressing is what adheres that crispy<br>crust to the juicy chicken beneath. It's cooked right in the air fryer for an easy<br>dinner as is, or slice them up to serve over a salad or in a sandwich or wrap.</p>
         </div>
         <div class="container">
-            <img src="/asests/Crispy Caesar Chicken Cutlets.jpg" width="600" height="450" alt="" style="margin-top: 5%;">
+            <img src="/asests/Crispy Caesar Chicken Cutlets.jpg" alt="" >
         </div>
     </div>
-    <table>
-        <tr>
-            <td><strong>Prep Time:</strong> <br><br> 15 mins</td>
-            <td><strong>Cook Time:</strong> <br><br> 35 mins</td>
-            <td><strong>Total Time:</strong> <br><br> 55 mins</td>
-        </tr>
-        <tr>
-            <td><strong>Servings:</strong> <br><br> 6 (serving size: 1<br> cutlet)</td>
-        </tr>
-    </table>
+    <div class="time-servings">
+        <div class="time-box">
+            <strong>Prep Time:</strong> <br><br> 15 mins
+        </div>
+        <div class="time-box">
+            <strong>Cook Time:</strong> <br><br> 35 mins
+        </div>
+        <div class="time-box">
+            <strong>Total Time:</strong> <br><br> 55 mins
+        </div>
+        <div class="servings-box">
+            <strong>Servings:</strong> <br><br> 6 (serving size: 1 cutlet)
+        </div>
+    </div>    
     <div class="content">
         <h2>Ingredients</h2><br>
                 <ul>
@@ -181,7 +77,7 @@
         <p>Transfer to a serving platter, and repeat with remaining cutlets. Serve with<br>additional Parmesan cheese and dressing.</p>
     </div>
     <br>
-    <footer style="background-color: #AB9746; color: white; text-align: center; padding: 20px;">
+    <footer class="footer">
         &copy; 2024 TasteTreasure. All rights reserved.
     </footer>
 </body>

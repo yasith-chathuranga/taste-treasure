@@ -1,187 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TasteTreasure</title>
-    <link rel="icon" href="asests/TasteTreasure.png">
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            font-family: sans-serif;
-        }
-        .navbar{
-            width: 85%;
-            margin: auto;
-            padding: 35px 0;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            z-index: 1;
-        }
-        .logo{
-            width: 120px;
-            cursor: pointer;
-        }
-        .navbar ul li{
-            list-style: none;
-            display: inline-block;
-            margin: 0 40px;
-            position: relative;
-        }
-        .navbar ul li a{
-            text-decoration: none;
-            color: black;
-            text-transform: uppercase;
-        }
-        .navbar ul li::after{
-            content: '';
-            height: 3px;
-            width: 0%;
-            background-color: #AB9746;
-            position: absolute;
-            left: 0;
-            bottom: -10px;
-            transition: 0.5s;
-        }
-        .navbar ul li:hover::after{
-            width: 100%;
-        }
-        .content{
-            width: 100%;
-            padding-top: 100px;
-        }
-        .content h1{
-            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-size: 48px;
-            display: flex;
-            margin: 0 175px;
-            margin-top: -5%;
-        }
-        .content h2{
-            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-size: 36px;
-            display: flex;
-            margin: 0 175px;
-            margin-top: -2%;
-        }
-        .content h3{
-            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-size: 24px;
-            display: flex;
-            margin: 0 175px;
-            margin-top: -4%;
-        }
-        .content ul{
-            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-size: 18px;
-            display: block;
-            margin: 0 193px;
-            margin-top: 2%;
-        }
-        .content p{
-            margin: 20px auto;
-            font-weight: 100%;
-            line-height: 25px;
-            margin: 0 175px;
-        }
-        .container {
-            display: flex;
-            margin: 0 175px;
-            height: 100vh;
-        }
-        table {
-            border: 10px solid #AB9746;
-            border-collapse: collapse;
-            margin: 0 175px;
-            margin-top: -12%;
-            width: 600px;
-            height: 100px;
-        }
-        td{
-            border: 1px;
-            padding: 30px;
-            text-align: left;
-        }
-        th{
-            border: 1px solid rgb(0, 0, 0);
-            padding: 30px;
-        }
-        img {
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: cover;
-        }
-    </style>
-</head>
-<body>
+    <link rel="stylesheet" href="/css/garlic-shrimp-style.css" />
+    <link rel="icon" href="asests/TasteTreasure.png" />
+  </head>
+  <body>
     <div class="banner">
-        <div class="navbar">
-            <img src="asests/TasteTreasure.png" alt="logo" style="width: 400px;">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Recipes</a></li>
-                <li><a href="about-us.html">About Us</a></li>
-                <li><a href="contact-us.html">Contact Us</a></li>
-            </ul>
-        </div>
-        <div class="content">
-            <h1>Simple Garlic Shrimp</h1><br>
-            <p>Give this garlic shrimp recipe a try if you like shrimp and love garlic. It's fast and<br>delicious, and I hope you enjoy it!</p>
-        </div>
-        <div class="container">
-            <img src="/asests/Garlic Shrimp.jpg" width="600" height="450" alt="" style="margin-top: 5%;">
-        </div>
+      <div class="navbar">
+        <img src="asests/TasteTreasure.png" alt="logo" style="width: 400px" />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <h1>Simple Garlic Shrimp</h1>
+        <br />
+        <p>
+          Give this garlic shrimp recipe a try if you like shrimp and love
+          garlic. It's fast and<br />delicious, and I hope you enjoy it!
+        </p>
+      </div>
+      <div class="container">
+        <img src="/asests/Garlic Shrimp.jpg" alt="" />
+      </div>
     </div>
-    <table>
-        <tr>
-            <td><strong>Prep Time:</strong> <br><br> 15 mins</td>
-            <td><strong>Cook Time:</strong> <br><br> 10 mins</td>
-            <td><strong>Total Time:</strong> <br><br> 25 mins</td>
-        </tr>
-        <tr>
-            <td><strong>Servings:</strong> <br><br> 4</td>
-        </tr>
-    </table>
-    <div class="content">
-        <h2>Ingredients</h2><br>
-                <ul>
-                    <li>1 ½ tablespoons olive oil</li><br>
-                    <li>1 pound shrimp, peeled and deveined</li><br>
-                    <li>salt to taste</li><br>
-                    <li>6 cloves garlic, finely minced</li><br>
-                    <li>¼ teaspoon red pepper flakes</li><br>
-                    <li>3 tablespoons lemon juice</li><br>
-                    <li>1 tablespoon caper brine</li><br>
-                    <li>2 tablespoons cold butter, cut into 4 equal<br> pieces, divided</li><br>
-                    <li>⅓ cup chopped flat-leaf parsley, divided</li><br>
-                    <li>1 teaspoon water, or as needed</li>
-                </ul>
+    <div class="time-servings">
+      <div class="time-box">
+        <strong>Prep Time:</strong><br /><br />
+        15 mins
+      </div>
+      <div class="time-box">
+        <strong>Cook Time:</strong><br /><br />
+        10 mins
+      </div>
+      <div class="time-box">
+        <strong>Total Time:</strong><br /><br />
+        25 mins
+      </div>
+      <div class="servings-box">
+        <strong>Servings:</strong><br /><br />
+        4
+      </div>
     </div>
     <div class="content">
-        <h2>Directions</h2><br>
-        <p><strong>Step 1</strong></p>
-        <p>Gather all ingredients.</p><br>
-        <p><strong>Step 2</strong></p>
-        <p>Heat olive oil in a heavy skillet over high heat until it just begins to smoke. Place<br>shrimp in an even layer on the bottom of the pan and cook for 1 minute without<br>stirring.</p><br>
-        <p><strong>Step 3</strong></p>
-        <p>Season shrimp with salt; cook and stir until shrimp begin to turn pink, about 1<br>minute.</p><br>
-        <p><strong>Step 4</strong></p>
-        <p>Add garlic and red pepper flakes; cook and stir for 1 minute.</p><br>
-        <p><strong>Step 5</strong></p>
-        <p>Stir in lemon juice, caper brine, 1 piece of butter, and 1/2 of the parsley; cook<br>until butter has melted, about 1 minute.</p><br>
-        <p><strong>Step 6</strong></p>
-        <p>Reduce heat to low and stir in remaining 3 pieces butter. Cook and stir until<br>butter has melted, sauce is thick, and shrimp are pink and opaque, 2 to 3<br>minutes.</p><br>
-        <p><strong>Step 7</strong></p>
-        <p>Remove shrimp with a slotted spoon and transfer to a bowl; continue to cook<br>butter sauce, adding water, 1 teaspoon at a time, if too thick, about 2 minutes.</p><br>
-        <p><strong>Step 8</strong></p>
-        <p>Season with salt to taste; serve shrimp topped with the pan sauce and<br>remaining parsley. Enjoy!</p>
+      <h2>Ingredients</h2>
+      <br />
+      <ul>
+        <li>1 ½ tablespoons olive oil</li>
+        <br />
+        <li>1 pound shrimp, peeled and deveined</li>
+        <br />
+        <li>salt to taste</li>
+        <br />
+        <li>6 cloves garlic, finely minced</li>
+        <br />
+        <li>¼ teaspoon red pepper flakes</li>
+        <br />
+        <li>3 tablespoons lemon juice</li>
+        <br />
+        <li>1 tablespoon caper brine</li>
+        <br />
+        <li>
+          2 tablespoons cold butter, cut into 4 equal<br />
+          pieces, divided
+        </li>
+        <br />
+        <li>⅓ cup chopped flat-leaf parsley, divided</li>
+        <br />
+        <li>1 teaspoon water, or as needed</li>
+      </ul>
     </div>
-    <br>
-    <footer style="background-color: #AB9746; color: white; text-align: center; padding: 20px;">
-        &copy; 2024 TasteTreasure. All rights reserved.
+    <div class="content">
+      <h2>Directions</h2>
+      <br />
+      <p><strong>Step 1</strong></p>
+      <p>Gather all ingredients.</p>
+      <br />
+      <p><strong>Step 2</strong></p>
+      <p>
+        Heat olive oil in a heavy skillet over high heat until it just begins to
+        smoke. Place<br />shrimp in an even layer on the bottom of the pan and
+        cook for 1 minute without<br />stirring.
+      </p>
+      <br />
+      <p><strong>Step 3</strong></p>
+      <p>
+        Season shrimp with salt; cook and stir until shrimp begin to turn pink,
+        about 1<br />minute.
+      </p>
+      <br />
+      <p><strong>Step 4</strong></p>
+      <p>Add garlic and red pepper flakes; cook and stir for 1 minute.</p>
+      <br />
+      <p><strong>Step 5</strong></p>
+      <p>
+        Stir in lemon juice, caper brine, 1 piece of butter, and 1/2 of the
+        parsley; cook<br />until butter has melted, about 1 minute.
+      </p>
+      <br />
+      <p><strong>Step 6</strong></p>
+      <p>
+        Reduce heat to low and stir in remaining 3 pieces butter. Cook and stir
+        until<br />butter has melted, sauce is thick, and shrimp are pink and
+        opaque, 2 to 3<br />minutes.
+      </p>
+      <br />
+      <p><strong>Step 7</strong></p>
+      <p>
+        Remove shrimp with a slotted spoon and transfer to a bowl; continue to
+        cook<br />butter sauce, adding water, 1 teaspoon at a time, if too
+        thick, about 2 minutes.
+      </p>
+      <br />
+      <p><strong>Step 8</strong></p>
+      <p>
+        Season with salt to taste; serve shrimp topped with the pan sauce and<br />remaining
+        parsley. Enjoy!
+      </p>
+    </div>
+    <br />
+    <footer class="footer">
+      &copy; 2024 TasteTreasure. All rights reserved.
     </footer>
-</body>
+  </body>
 </html>

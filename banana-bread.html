@@ -5,124 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TasteTreasure</title>
+    <link rel="stylesheet" href="/css/banana-bread-style.css">
     <link rel="icon" href="asests/TasteTreasure.png">
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            font-family: sans-serif;
-        }
-        .navbar{
-            width: 85%;
-            margin: auto;
-            padding: 35px 0;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            z-index: 1;
-        }
-        .logo{
-            width: 120px;
-            cursor: pointer;
-        }
-        .navbar ul li{
-            list-style: none;
-            display: inline-block;
-            margin: 0 40px;
-            position: relative;
-        }
-        .navbar ul li a{
-            text-decoration: none;
-            color: black;
-            text-transform: uppercase;
-        }
-        .navbar ul li::after{
-            content: '';
-            height: 3px;
-            width: 0%;
-            background-color: #AB9746;
-            position: absolute;
-            left: 0;
-            bottom: -10px;
-            transition: 0.5s;
-        }
-        .navbar ul li:hover::after{
-            width: 100%;
-        }
-        .content{
-            width: 100%;
-            padding-top: 100px;
-        }
-        .content h1{
-            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-size: 48px;
-            display: flex;
-            margin: 0 175px;
-            margin-top: -5%;
-        }
-        .content h2{
-            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-size: 36px;
-            display: flex;
-            margin: 0 175px;
-            margin-top: -2%;
-        }
-        .content h3{
-            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-size: 24px;
-            display: flex;
-            margin: 0 175px;
-            margin-top: -4%;
-        }
-        .content ul{
-            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-size: 18px;
-            display: block;
-            margin: 0 193px;
-            margin-top: 2%;
-        }
-        .content p{
-            margin: 20px auto;
-            font-weight: 100%;
-            line-height: 25px;
-            margin: 0 175px;
-        }
-        .container {
-            display: flex;
-            margin: 0 175px;
-            height: 100vh;
-        }
-        table {
-            border: 10px solid #AB9746;
-            border-collapse: collapse;
-            margin: 0 175px;
-            margin-top: -12%;
-            width: 600px;
-            height: 100px;
-        }
-        td{
-            border: 1px;
-            padding: 30px;
-            text-align: left;
-        }
-        th{
-            border: 1px solid rgb(0, 0, 0);
-            padding: 30px;
-        }
-        img {
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: cover;
-        }
-    </style>
 </head>
 <body>
     <div class="banner">
         <div class="navbar">
-            <img src="asests/TasteTreasure.png" alt="logo" style="width: 400px;">
+            <img src="asests/TasteTreasure.png" alt="logo">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">Recipes</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
                 <li><a href="about-us.html">About Us</a></li>
                 <li><a href="contact-us.html">Contact Us</a></li>
             </ul>
@@ -132,20 +24,26 @@
             <p>These banana bread brownies are chocolate brownies that taste like banana<br>bread, and have the chewy, fudgy texture of a brownie. As an added bonus,<br>you'll learn how to brûlée a banana for an extra-special finishing touch.</p>
         </div>
         <div class="container">
-            <img src="/asests/Banana Bread Brownies.jpg" width="600" height="450" alt="" style="margin-top: 5%;">
+            <img src="/asests/Banana Bread Brownies.jpg" alt="" >
         </div>
     </div>
-    <table>
-        <tr>
-            <td><strong>Prep Time:</strong> <br><br> 15 mins</td>
-            <td><strong>Cook Time:</strong> <br><br> 30 mins</td>
-            <td><strong>Chill Time:</strong> <br><br> 1 hr</td>
-        </tr>
-        <tr>
-            <td><strong>Total Time:</strong> <br><br> 1 hr 45 mins</td>
-            <td><strong>Servings:</strong> <br><br> 12</td>
-        </tr>
-    </table>
+    <div class="time-servings">
+        <div class="time-box">
+            <strong>Prep Time:</strong> <br><br> 15 mins
+        </div>
+        <div class="time-box">
+            <strong>Cook Time:</strong> <br><br> 30 mins
+        </div>
+        <div class="time-box">
+            <strong>Chill Time:</strong> <br><br> 1 hr
+        </div>
+        <div class="time-box">
+            <strong>Total Time:</strong> <br><br> 1 hr 45 mins
+        </div>
+        <div class="servings-box">
+            <strong>Servings:</strong> <br><br> 12
+        </div>
+    </div>      
     <div class="content">
         <h2>Ingredients</h2><br>
                 <ul>
@@ -185,7 +83,7 @@
         <p>For optional banana brûlée: While brownies are cooling, cover each banana slice<br>with a half teaspoon of sugar. Use a propane kitchen torch to melt the sugar<br>until dark brown and bubbling. Be careful not to char the edges of the crust<br>around the banana too much. This banana brûlée step can also be done before<br>the brownies go into the oven.</p>
     </div>
     <br>
-    <footer style="background-color: #AB9746; color: white; text-align: center; padding: 20px;">
+    <footer class="footer">
         &copy; 2024 TasteTreasure. All rights reserved.
     </footer>
 </body>
